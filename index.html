@@ -4,36 +4,53 @@
 <head>
   <meta name="author" content="Ronald Gayowsky">
   <meta name="description" content="Resume">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta charset="utf-8">
-  <!-- what does this do? -->
+  <!-- This links all of the classes to the bootstrap file -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   
   <title>Ronald Gayowsky</title>
 </head>
  
 <body>
-  <!-- Nav Bar -->
-  <ul class="nav justify-content-end ">
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#!">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#!">Skills</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#!">Experience</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#!">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#!">Resume</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#!">Contact</a>
-      </li>
-    </ul>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+
+        <a class="navbar-brand mr-0 mr-md-2" href="#">Ronald Gayowsky</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+            <!-- Empty in order to push nav-items to the right -->
+            <!-- Causes issue where if window is small, a listbox appears. Definitely a hack fix, remedy in future patch -->
+        </div>
+
+        <div class="navbar-nav mr-auto justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link p-2 disabled" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link p-2 disabled" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link p-2 disabled" href="#">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link p-2 disabled" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link p-2 disabled" href="#">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link p-2 disabled" href="#">Contact</a>
+            </li>
+        </div>
+
+    </nav>
+
+
       
 </body>
  
