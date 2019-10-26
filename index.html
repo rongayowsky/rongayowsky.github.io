@@ -13,6 +13,10 @@
 
     <!-- This allows me to overwrite BS -->
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- Include home-cooked Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/sectionNavigation.js"> </script> 
   
 </head>
  
@@ -31,22 +35,39 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarText">
         <div class="navbar-nav justify-content-end">
             <a class="nav-item">
-                <a class="nav-link p-2 disabled" href="#">About</a>
+                <a class="nav-link p-2 active" href="#" id="aboutNav" onclick="navToSection('aboutNav')">
+                    About
+                </a>
             </a>
             <a class="nav-item">
-                <a class="nav-link p-2 disabled" href="#">Skills</a>
+                <a class="nav-link p-2 active" href="#" id="technologyNav" onclick="navToSection('technologyNav')">
+                    Technology
+                </a>
             </a>
             <a class="nav-item">
-                <a class="nav-link p-2 disabled" href="#">Experience</a>
+                <a class="nav-link p-2 active" href="#" id="experienceNav" onclick="navToSection('experienceNav')">
+                    Experience
+                </a>
             </a>
             <a class="nav-item">
-                <a class="nav-link p-2 disabled" href="#">Projects</a>
+                <a class="nav-link p-2 active" href="#" id="projectsNav" onclick="navToSection('projectsNav')">
+                    Projects
+                </a>
             </a>
             <a class="nav-item">
-                <a class="nav-link p-2 disabled" href="#">Resume</a>
+                    <a class="nav-link p-2 active" href="#" id="skillsNav" onclick="navToSection('skillsNav')">
+                        Skills
+                    </a>
             </a>
             <a class="nav-item">
-                <a class="nav-link p-2 disabled" href="#">Contact</a>
+                <a class="nav-link p-2 active" href="#" id="resumeNav" onclick="navToSection('resumeNav')">
+                    Resume
+                </a>
+            </a>
+            <a class="nav-item">
+                <a class="nav-link p-2 active" href="#" id="contactNav" onclick="navToSection('contactNav')">
+                    Contact
+                </a>
             </a>
         </div>
     </div>
@@ -56,7 +77,7 @@
 
 <!-- Introduction -->
 <div class="jumbotron">
-    <h1 class="display-2"> Hi, I'm Ron. </h1>
+    <h1 href="#" id="#about" class="display-2"> Hi, I'm Ron. </h1>
     <p class="lead" style="text-align: justify">
         I am a Mechatronics Engineering student studying at the University of Waterloo, 
         pursuing a career in Software Development. When I'm not buried with work
@@ -65,12 +86,8 @@
     </p>
 </div>
 
-<div class="container">
-        <!-- Content here -->
-</div>
-
 <!-- Technology -->
-<h2>Technologies</h2>
+<h2 id="technology">Technology</h2>
 <div>
     <h3>Languages</h3>
     <ul>
@@ -78,6 +95,8 @@
         <li>Python</li>
         <li>JavaScript</li>
         <li>Bash</li>
+        <li>HTML5</li>
+        <li>CSS</li>
     </ul>
     <h3>Platforms</h3>
     <ul>
@@ -87,121 +106,138 @@
         <li>Raspberry Pi</li>
     </ul>
 </div>
+<div style="height: 50px;"></div>
 
 <!-- Experience -->
-<h2>Experience</h2>
-<h3>Blackberry</h3>
-<h5>Software Developer (Fall 2019)</h5>
-<ul>
-    <li>Implemented an SQLite database in C++ for use in Android and iOS applications</li>
-    <li>Developed programs for Unix to test product functionality</li>
-    <li>Designed, implemented, and tested BlackBerry security solutions</li>
-    <li>Participated in proof of concept projects, either hands-on or consulting with the developer primaries</li>
-</ul>
-
-<h3>Blackberry</h3>
-<h5>Automated Test Developer (Winter 2019)</h5>
-<ul>
-    <li>Established a device performance tracking system by creating a test suite and database in Python and SQL</li>
-    <li>Redesigned a database to facilitate internal device tracking history using MySQL</li>
-    <li>Built a Python script to upload automated test results to TestRail</li>
-    <li>Wrote automated test scripts in Python for device firmware and bootchain security</li>
-</ul>
-
-<h3>Crystal Claire Cosmetics</h3>
-<h5>Automation Engineering (Spring 2018)</h5>
-<ul>
-    <li>Integrated UR5 collaborative robotic arms and sensors into existing manufacturing lines</li>
-    <li>Created a multi-threaded programs in UR Script to coordinate function of external sensors and machines robotic arm</li>
-    <li>Drafted end-of-arm tooling in Solidworks to effectively pick up a wide range of products to reduce changeover time</li>
-    <li>Research, purchase, and install sensors and pneumatic components for a robotic system</li>
-    <li>Modify existing production PLC with additional sensors to improve quality assurance</li>
-</ul>
-
-<h3>RTG Systems Inc.</h3>
-<h5>Engineering Design Assistant (Fall 2017)</h5>
-<ul>
-    <li>Created AutoLISP scripts to provide technicians custom drafting tools in AutoCAD</li>
-    <li>Wrote project tracking functionality into company MS Access database with VBA to create transparency on project status</li>
-    <li>Designed a contract generation script based on scope of work of job to ensure consistent language and reduce repetitive tasks</li>
-</ul>
-
-<h3>General Dynamics - Mission Systems Canada</h3>
-<h5>Software QA (Winter 2017)</h5>
-<ul>
-    <li>Investigated and debugged software issues in Ada and Java for the Aurora Surveillance Aircraft Mission System Software</li>
-    <li>Built and installed software onto the aircraft computer system and test in a lab setting</li>
-</ul>
+<h2 id="experience">Experience</h2>
+<div>
+    <h3>Blackberry</h3>
+    <h5>Software Developer (Fall 2019)</h5>
+    <ul>
+        <li>Implemented an SQLite database in C++ for use in Android and iOS applications</li>
+        <li>Developed programs for Unix to test product functionality</li>
+        <li>Designed, implemented, and tested BlackBerry security solutions</li>
+        <li>Participated in proof of concept projects, either hands-on or consulting with the developer primaries</li>
+    </ul>
+    
+    <h3>Blackberry</h3>
+    <h5>Automated Test Developer (Winter 2019)</h5>
+    <ul>
+        <li>Established a device performance tracking system by creating a test suite and database in Python and SQL</li>
+        <li>Redesigned a database to facilitate internal device tracking history using MySQL</li>
+        <li>Built a Python script to upload automated test results to TestRail</li>
+        <li>Wrote automated test scripts in Python for device firmware and bootchain security</li>
+    </ul>
+    
+    <h3>Crystal Claire Cosmetics</h3>
+    <h5>Automation Engineering (Spring 2018)</h5>
+    <ul>
+        <li>Integrated UR5 collaborative robotic arms and sensors into existing manufacturing lines</li>
+        <li>Created a multi-threaded programs in UR Script to coordinate function of external sensors and machines robotic arm</li>
+        <li>Drafted end-of-arm tooling in Solidworks to effectively pick up a wide range of products to reduce changeover time</li>
+        <li>Research, purchase, and install sensors and pneumatic components for a robotic system</li>
+        <li>Modify existing production PLC with additional sensors to improve quality assurance</li>
+    </ul>
+    
+    <h3>RTG Systems Inc.</h3>
+    <h5>Engineering Design Assistant (Fall 2017)</h5>
+    <ul>
+        <li>Created AutoLISP scripts to provide technicians custom drafting tools in AutoCAD</li>
+        <li>Wrote project tracking functionality into company MS Access database with VBA to create transparency on project status</li>
+        <li>Designed a contract generation script based on scope of work of job to ensure consistent language and reduce repetitive tasks</li>
+    </ul>
+    
+    <h3>General Dynamics - Mission Systems Canada</h3>
+    <h5>Software QA (Winter 2017)</h5>
+    <ul>
+        <li>Investigated and debugged software issues in Ada and Java for the Aurora Surveillance Aircraft Mission System Software</li>
+        <li>Built and installed software onto the aircraft computer system and test in a lab setting</li>
+    </ul>
+</div>
+<div style="height: 50px;"></div>
 
 <!-- Projects -->
-<h2>Projects</h2>
-<h3>Space Invaders on Embedded System</h3>
-<h5>Develop for the ARM Cortex M3 Keil LPC1768 Microcontroller (Fall 2018)</h5>
-<ul>
-    <li>Designed multiple tasks to jointly handle game elements such as physics, logic, animation, and I/O</li>
-    <li>Handled four I/O devices for player input and media output (potentiometer, push button, LEDs, LCD display)</li>
-    <li>Written in C using <span>&#181;</span>Vision4</li>
-</ul>
-
-<h3>"Pass the Butter" Robot</h3>
-<h5>Create a robot that can search and retrieve butter (Fall 2016)</h5>
-<ul>
-    <li>Designed and implement a searching algorithm to categorize items and reject non-butter instances</li>
-    <li>Responsible for mechanical design of the driving configuration, grabbing mechanism, and chassis</li>
-</ul>
-
-<h3>Skittle Sorter</h3>
-<h5>Develop a robot to sort skittles based on colour (Spring 2016)</h5>
-<ul>
-    <li>Programmed an Arduino in C++ to receive and filter input data from an RGB colour sensor</li>
-    <li>Designed power supply and logic circuits for microcontroller to interface with stepper motors</li>
-    <li>Drafted and 3D printed skittle flow control components in Solidworks</li>
+<h2  id="projects">Projects</h2>
+<div>
+    <h3>Space Invaders on Embedded System</h3>
+    <h5>Develop for the ARM Cortex M3 Keil LPC1768 Microcontroller (Fall 2018)</h5>
+    <ul>
+        <li>Designed multiple tasks to jointly handle game elements such as physics, logic, animation, and I/O</li>
+        <li>Handled four I/O devices for player input and media output (potentiometer, push button, LEDs, LCD display)</li>
+        <li>Written in C using <span>&#181;</span>Vision4</li>
+    </ul>
     
-</ul>
+    <h3>"Pass the Butter" Robot</h3>
+    <h5>Create a robot that can search and retrieve butter (Fall 2016)</h5>
+    <ul>
+        <li>Designed and implement a searching algorithm to categorize items and reject non-butter instances</li>
+        <li>Responsible for mechanical design of the driving configuration, grabbing mechanism, and chassis</li>
+    </ul>
+    
+    <h3>Skittle Sorter</h3>
+    <h5>Develop a robot to sort skittles based on colour (Spring 2016)</h5>
+    <ul>
+        <li>Programmed an Arduino in C++ to receive and filter input data from an RGB colour sensor</li>
+        <li>Designed power supply and logic circuits for microcontroller to interface with stepper motors</li>
+        <li>Drafted and 3D printed skittle flow control components in Solidworks</li>
+        
+    </ul>
+</div>
+<div style="height: 50px;"></div>
 
 <!-- Miscellaneous -->
-<h2>Skills</h2>
-<h3>Mechanical</h3>
-<ul>
-    <li>AutoCAD</li>
-    <li>SolidWorks</li>
-    <li>Part Design</li>
-    <li>Laser Cutting</li>
-    <li>3D Printing</li>
-    <li>Shop Experience</li>
-</ul>
-<h3>Electrical</h3>
-<ul>
-    <li>Circuit Design</li>
-    <li>Soldering</li>
-    <li>Prototyping</li>
-    <li>Troubleshooting</li>
-</ul>
-<h2>Interests</h2>
-<h3>Professional</h3>
-<ul>
-    <li>Learning new languages and technologies</li>
-</ul>
-<h3>Personal</h3>
-<ul>
-    <li>Rock Climbing</li>
-    <li>Mountain Biking</li>
-    <li>Hockey</li>
-    <li>Music</li>
-    <li>Cooking</li>
-</ul>
+<h2 id="skills">Skills</h2>
+<div>
+    <h3>Mechanical</h3>
+    <ul>
+        <li>AutoCAD</li>
+        <li>SolidWorks</li>
+        <li>Part Design</li>
+        <li>Laser Cutting</li>
+        <li>3D Printing</li>
+        <li>Shop Experience</li>
+    </ul>
+    <h3>Electrical</h3>
+    <ul>
+        <li>Circuit Design</li>
+        <li>Soldering</li>
+        <li>Prototyping</li>
+        <li>Troubleshooting</li>
+    </ul>
+</div>
+<div style="height: 50px;"></div>
+
+<h2 id="interests">Interests</h2>
+<div>
+    <h3>Professional</h3>
+    <ul>
+        <li>Learning new languages and technologies</li>
+    </ul>
+    <h3>Personal</h3>
+    <ul>
+        <li>Rock Climbing</li>
+        <li>Mountain Biking</li>
+        <li>Hockey</li>
+        <li>Music</li>
+        <li>Cooking</li>
+    </ul>
+</div>
+<div style="height: 50px;"></div>
 
 <!-- Resume -->
-<h2>Resume</h2>
-<p>Take a look or download my <a href="External_Files/Resume3A.pdf">resume</a>.</p>
-<ul></ul>
+<h2 id="resume">Resume</h2>
+<div>
+    <p>Take a look or download my <a href="External_Files/Resume3A.pdf">resume</a>.</p>
+</div>
+<div style="height: 25px;"></div>
 
 <!-- Contact -->
-<h2>Contact</h2>
-<p>Phone: (905) 906-5406</p>
-<p>Email: <a href="mailto:rcgayows@uwaterloo.ca">rcgayows@uwaterloo.ca</a></p>
-<p><a href="https://www.linkedin.com/in/ronald-gayowsky-77248b186/">LinkedIn</a></p>
-
-<ul></ul>
+<h2 id="contact">Contact</h2>
+<div>
+    <p>Phone: (905) 906-5406</p>
+    <p>Email: <a href="mailto:rcgayows@uwaterloo.ca">rcgayows@uwaterloo.ca</a></p>
+    <p><a href="https://www.linkedin.com/in/ronald-gayowsky-77248b186/">LinkedIn</a></p>
+</div>
+<div style="height: 100px;"></div>
 
 </html>
