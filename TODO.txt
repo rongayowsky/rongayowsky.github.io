@@ -1,0 +1,17 @@
+1. Make use blocks to put relevant information side by side. This should help make more sparse
+    parts of the site look more intriguing.
+
+2. Get links working
+
+3. Show an inscreen version of the resume. You may have to use an image rather than a pdf.
+
+4. Make the sorting algorithm program using JavaScript.
+
+5. Final touches to make it presentable for your resume.
+
+------------- Stretch Goals -------------
+
+6. Add pictures to make the website more intriguing. 
+
+7. Make seperate blocks similar to apple's website to give seperate sections to better
+    stand out.
