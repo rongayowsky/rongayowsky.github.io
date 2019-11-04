@@ -13,27 +13,22 @@ h1 {
     text-align: center;
     margin-top: 3rem;
 }
+
 h2 {
     font-weight: bold;
-    margin-left: 16rem;
 }
 h3 {
     font-family: arial, sans-serif;
-    margin-left: 16rem;
-    margin-right: 12rem;
 }
 h4 {
     font-family: arial, sans-serif;
     font-weight: bold;
-    margin-left: 16rem;
-    margin-right: 12rem;
 }
 h5 {
     font-family: arial, sans-serif;
     font-weight: bold;
-    margin-left: 16rem;
-    margin-right: 12rem;
 }
+
 div {
     /*margin-top: 2rem;
     margin-left: 16rem;
@@ -43,12 +38,13 @@ div {
 p {
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 16rem;
-    margin-right: 12rem;
 }
 li {
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 15rem;
-    margin-right: 12rem;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+  }

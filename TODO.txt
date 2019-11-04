@@ -1,13 +1,10 @@
-1. Make use blocks to put relevant information side by side. This should help make more sparse
-    parts of the site look more intriguing.
+1. Update Resume to be best resume.
 
-2. Get links working
+2. Make the on-page view of the resume prettier.
 
-3. Show an inscreen version of the resume. You may have to use an image rather than a pdf.
+3. Make the sorting algorithm program using JavaScript.
 
-4. Make the sorting algorithm program using JavaScript.
-
-5. Final touches to make it presentable for your resume.
+4. Final touches to make it presentable for your resume.
 
 ------------- Stretch Goals -------------
 
