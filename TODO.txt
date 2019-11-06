@@ -8,3 +8,5 @@
 
 5. Add pictures to make the website more intriguing. 
     Specifically add pictures for applicable projects.
+
+6. List technologies related to each job
