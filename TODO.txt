@@ -6,9 +6,5 @@
 
 4. Final touches to make it presentable for your resume.
 
-------------- Stretch Goals -------------
-
-6. Add pictures to make the website more intriguing. 
-
-7. Make seperate blocks similar to apple's website to give seperate sections to better
-    stand out.
+5. Add pictures to make the website more intriguing. 
+    Specifically add pictures for applicable projects.
