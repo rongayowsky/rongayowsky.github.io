@@ -10,3 +10,7 @@
     Specifically add pictures for applicable projects.
 
 6. List technologies related to each job
+
+7. Use flexboxes better to space things out (think 50/50 rather than auto spacing)
+    - year+season on projects/jobs
+    - languages split into two rows
