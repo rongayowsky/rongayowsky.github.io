@@ -2,65 +2,277 @@
 <html lang="en">
  
 <head>
-  <title>Ronald Gayowsky</title>
-  <meta name="author" content="Ronald Gayowsky">
-  <meta name="description" content="Resume">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta charset="utf-8">
+    <title>Ronald Gayowsky</title>
+    <meta name="author" content="Ronald Gayowsky">
+    <meta name="description" content="Resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
 
-  <!-- This links all of the classes to the bootstrap file -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- This links all of the classes to the bootstrap file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- This allows me to overwrite BS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Include home-cooked Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/sectionNavigation.js"> </script> 
+  
 </head>
  
-<body>
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-        <!-- (brand) Name in top left -->
-        <a class="navbar-brand mr-0 mr-md-2" href="#">Ronald Gayowsky</a>
+<!-- style="background-color:#E9ECEF;" -->
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <!-- (brand) Name in top left -->
+    <a class="navbar-brand mr-0 mr-md-2" href="#">Ronald Gayowsky</a>
 
-        <!-- (collapse button) Initialize the options hamburger button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- (collapse button) Initialize the options hamburger button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <!-- Create the links and allow them to be passed inside of the container -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
-            <div class="navbar-nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link p-2 disabled" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link p-2 disabled" href="#">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link p-2 disabled" href="#">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link p-2 disabled" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link p-2 disabled" href="#">Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link p-2 disabled" href="#">Contact</a>
-                </li>
-            </div>
+    <!-- Create the links and allow them to be passed inside of the container -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+        <div class="navbar-nav justify-content-end">
+            <a class="nav-item">
+                <a class="nav-link p-2 active" href="#" id="aboutNav" onclick="navToSection('aboutNav')">
+                    About
+                </a>
+            </a>
+            <a class="nav-item">
+                <a class="nav-link p-2 active" href="#" id="technologyNav" onclick="navToSection('technologyNav')">
+                    Technology
+                </a>
+            </a>
+            <a class="nav-item">
+                <a class="nav-link p-2 active" href="#" id="experienceNav" onclick="navToSection('experienceNav')">
+                    Experience
+                </a>
+            </a>
+            <a class="nav-item">
+                <a class="nav-link p-2 active" href="#" id="projectsNav" onclick="navToSection('projectsNav')">
+                    Projects
+                </a>
+            </a>
+            <a class="nav-item">
+                    <a class="nav-link p-2 active" href="#" id="skillsNav" onclick="navToSection('skillsNav')">
+                        Skills
+                    </a>
+            </a>
+            <a class="nav-item">
+                <a class="nav-link p-2 active" href="#" id="resumeNav" onclick="navToSection('resumeNav')">
+                    Resume
+                </a>
+            </a>
+            <a class="nav-item">
+                <a class="nav-link p-2 active" href="#" id="contactNav" onclick="navToSection('contactNav')">
+                    Contact
+                </a>
+            </a>
         </div>
-        <!-- End of collapsable button-->
-    </nav>
-    <!-- End of Nav Bar -->
-
-    <div class="jumbotron">
-        <h1 class="display-4"> Hi, I'm Ron. </h1>
-        <p class="lead">I am a Mechatronics Engineering Student studying
-          at the University of Waterloo, pursuing a career in software development.
-        </p>
-        <hr class="my-4">
-        <p> This website is currently in development as I learn HTML and Bootstrap.
-            Thank you for your patience. </p>
-          
     </div>
+    <!-- End of collapsable button-->
+</nav>
+<!-- End of Nav Bar -->
 
-</body>
- 
+<!-- Introduction -->
+<div class="jumbotron">
+    <h1 href="#" id="#about" class="display-2"> Hi, I'm Ron. </h1>
+    <div class="container">
+        <p class="lead" style="text-align: justify">
+            I am a Mechatronics Engineering student studying at the University of Waterloo, 
+            pursuing a career in Software Development. When I'm not buried with work
+            I enjoy rock climbing, cooking, and music.  I am passionate about learning
+            new technologies and applying them to make a positive difference.
+        </p>
+    </div>
+</div>
+
+<!-- Technology -->
+<div class="container">
+<h2 id="technology">Technology</h2>
+<div class="row">
+    <div class="col-md-auto">
+        <h3>Languages</h3>
+        <ul>
+            <li>C++</li>
+            <li>C</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Bash</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>SQL</li>
+            <li>Lisp</li>
+        </ul>
+    </div>
+    <div class="col-2"></div>
+    <div class="col-md-auto">
+        <h3>Platforms</h3>
+        <ul>
+            <li>Linux</li>
+            <li>Arduino</li>
+            <li>Raspberry Pi</li>
+            <li>Android</li>
+        </ul>
+    </div>
+</div>
+    
+</div>
+<div style="height: 50px;"></div>
+
+<!-- Experience -->
+<div class="container">
+<h2 id="experience">Experience</h2>
+    <h3>Blackberry - Advanced Technology Development Labs</h3>
+    <h5>Software Developer (Fall 2019)</h5>
+    <ul>
+        <li>Wrote Unix programs to mimic the behaviour of malware to test product software</li>
+        <li>Significantly reduced build and test time by researching and introducing containerization to multiple target-platform development</li>
+        <li>Implemented an SQLite based cache in C++ for use in Android and iOS applications</li>
+        <li>Improved coop on-boarding experience by writing a "Hitchhiker's Guide" to Unix Development, consulting team engineers and using personal experience</li>
+    </ul>
+    
+    <h3>Blackberry - Firmware Development Team</h3>
+    <h5>Automated Test Developer (Winter 2019)</h5>
+    <ul>
+        <li>Established a device performance tracking system by creating a test suite and database in Python and SQL</li>
+        <li>Redesigned a database to facilitate internal device tracking history using MySQL</li>
+        <li>Built a Python script to upload automated test results to TestRail</li>
+        <li>Wrote automated test scripts in Python for device firmware and bootchain security</li>
+    </ul>
+    
+    <h3>Crystal Claire Cosmetics</h3>
+    <h5>Automation Engineer (Spring 2018)</h5>
+    <ul>
+        <li>Integrated UR5 collaborative robotic arms and sensors into existing manufacturing lines</li>
+        <li>Created multi-threaded programs in UR Script to coordinate function of external sensors, PLCs, and robotic arms</li>
+        <li>Researched, purchased, and installed sensors and pneumatic components for robotic systems</li>
+        <li>Drafted end-of-arm tooling in Solidworks to effectively pick up a wide range of products to reduce changeover time</li>
+    </ul>
+    
+    <h3>RTG Systems Inc.</h3>
+    <h5>Engineering Design Assistant (Fall 2017)</h5>
+    <ul>
+        <li>Created AutoLISP scripts to provide technicians custom drafting tools in AutoCAD</li>
+        <li>Wrote project tracking functionality into company MS Access database with VBA to create transparency on project status</li>
+        <li>Designed a contract generation script based on scope of work of job to ensure consistent language and reduce repetitive tasks</li>
+    </ul>
+    
+    <h3>General Dynamics - Mission Systems Canada</h3>
+    <h5>Software QA (Winter 2017)</h5>
+    <ul>
+        <li>Investigated and debugged software issues in Ada and Java for the Aurora Surveillance Aircraft Mission System Software</li>
+        <li>Built and installed software onto the aircraft computer system and test in a lab setting</li>
+    </ul>
+</div>
+<div style="height: 50px;"></div>
+
+<!-- Projects -->
+<div class="container">
+<h2  id="projects">Projects</h2>
+    <h3>Space Invaders on Embedded System</h3>
+    <h5>Develop for the ARM Cortex M3 Keil LPC1768 Microcontroller (Fall 2018)</h5>
+    <ul>
+        <li>Designed multiple threads to jointly handle game elements such as physics, logic, animation, and I/O</li>
+        <li>Handled four I/O devices for player input and media output (potentiometer, push button, LCD display, LEDs)</li>
+        <li>Written in C using <span>&#181;</span>Vision4</li>
+    </ul>
+    
+    <h3>"Pass the Butter" Robot</h3>
+    <h5>Create a robot that can search and retrieve butter (Fall 2016)</h5>
+    <ul>
+        <li>Implemented a searching algorithm to efficiently and accurately categorize items and reject non-butter instances</li>
+        <li>Designed mechanical systems such as robot drivetrain, grabbing mechanism, and chassis</li>
+    </ul>
+    
+    <h3>Skittle Sorter</h3>
+    <h5>Develop a robot to sort skittles based on colour (Spring 2016)</h5>
+    <ul>
+        <li>Programmed an Arduino in C++ to receive and filter input data from an RGB colour sensor</li>
+        <li>Designed power delivery and logic circuits for interfacing a microcontroller with stepper motors</li>
+        <li>Drafted and 3D printed skittle flow control components in Solidworks</li>
+        
+    </ul>
+</div>
+<div style="height: 50px;"></div>
+
+<!-- Miscellaneous -->
+<div class="container">
+<h2 id="skills">Skills</h2>
+<div class="row">
+    <div class="col-md-auto">
+        <h3>Mechanical</h3>
+        <ul>
+            <li>AutoCAD</li>
+            <li>SolidWorks</li>
+            <li>Part Design</li>
+            <li>Laser Cutting</li>
+            <li>3D Printing</li>
+            <li>Shop Experience</li>
+        </ul>
+    </div>
+    <div class="col-md-auto">
+        <h3>Electrical</h3>
+        <ul>
+            <li>Circuit Design</li>
+            <li>Soldering</li>
+            <li>Prototyping</li>
+            <li>Troubleshooting</li>
+        </ul>
+    </div>
+</div>
+</div>
+<div style="height: 50px;"></div>
+
+<div class="container">
+<h2 id="interests">Interests</h2>
+<div class="row">
+    <div class="col-md-auto">
+        <h3>Professional</h3>
+        <ul>
+            <li>Unix Applications</li>
+            <li>IoT Development</li>
+            <li>Embedded Development</li>
+            <li>Data Engineering</li>
+            <li>Continuous Learning</li>
+        </ul>
+    </div>
+    <div class="col-md-auto">
+        <h3>Personal</h3>
+        <ul>
+            <li>Rock Climbing</li>
+            <li>Mountain Biking</li>
+            <li>Hockey</li>
+            <li>Music</li>
+            <li>Carpentry</li>
+            <li>Cooking</li>
+        </ul>
+    </div>
+</div>
+<div style="height: 50px;"></div>
+
+<!-- Resume -->
+<div class="container">
+<h2 id="resume">Resume</h2>
+    <p>Take a look at my resume or download it <a href="External_Files/RonaldGayowskyResume.pdf">here</a>.</p>
+    <div style="height: 10px;"></div>
+    <div class="d-flex align-items-center justify-content-center">
+        <div>
+            <img src="External_Files/RonaldGayowskyResume.pdf" alt="Ronald Gayowsky's Resume">
+        </div>
+    </div>
+    
+</div>
+<div style="height: 100px;"></div>
+
+<!-- Contact -->
+<div class="container">
+<h2 id="contact">Contact</h2>
+    <p>Phone: (905) 906-5406</p>
+    <p>Email: <a href="mailto:rcgayows@uwaterloo.ca">rcgayows@uwaterloo.ca</a></p>
+    <p><a href="https://www.linkedin.com/in/ronald-gayowsky-77248b186/">LinkedIn</a></p>
+</div>
+<div style="height: 100px;"></div>
+
 </html>
