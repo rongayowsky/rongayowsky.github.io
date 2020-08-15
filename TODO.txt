@@ -1,16 +1,12 @@
 1. Update Resume to be best resume.
 
-2. Make the on-page view of the resume prettier.
+2. Update/Add information to be more accurate
 
-3. Make the sorting algorithm program using JavaScript.
+3. Add job title which best describes you
 
-4. Final touches to make it presentable for your resume.
-
-5. Add pictures to make the website more intriguing. 
+4. Add pictures to make the website more intriguing. 
     Specifically add pictures for applicable projects.
 
-6. List technologies related to each job
-
-7. Use flexboxes better to space things out (think 50/50 rather than auto spacing)
+5. Use flexboxes better to space things out (think 50/50 rather than auto spacing)
     - year+season on projects/jobs
     - languages split into two rows
