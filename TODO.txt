@@ -1,12 +1,6 @@
-1. Update Resume to be best resume.
-
-2. Update/Add information to be more accurate
-
-3. Add job title which best describes you
-
-4. Add pictures to make the website more intriguing. 
+1. Add pictures to make the website more intriguing. 
     Specifically add pictures for applicable projects.
 
-5. Use flexboxes better to space things out (think 50/50 rather than auto spacing)
+2. Use flexboxes better to space things out (think 50/50 rather than auto spacing)
     - year+season on projects/jobs
     - languages split into two rows
